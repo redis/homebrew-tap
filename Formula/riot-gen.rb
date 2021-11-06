@@ -1,12 +1,10 @@
 class RiotGen < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  version "2.13.0"
-  url "https://github.com/redis-developer/riot/releases/download/v2.13.0/riot-gen-2.13.0.zip"
-  sha256 "21ce84368c2af64e9c9ae6c593a580d85cc7552e17f997c2d2f7b8f8fe86885c"
+  version "2.14.0"
+  url "https://github.com/redis-developer/riot/releases/download/v2.14.0/riot-gen-2.14.0.zip"
+  sha256 "f1255cb849da172874b2ec6ca56d26fbc9dd9dfe73a4a7108fdec236ac656b76"
   license "Apache-2.0"
-
-  bottle :unneeded
 
   depends_on "openjdk@8"
 
@@ -17,6 +15,6 @@ class RiotGen < Formula
 
   test do
     output = shell_output("#{bin}/riot-gen --version")
-    assert_match "2.13.0", output
+    assert_match "2.14.0", output
   end
 end

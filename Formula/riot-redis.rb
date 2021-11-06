@@ -1,12 +1,10 @@
 class RiotRedis < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  version "2.13.0"
-  url "https://github.com/redis-developer/riot/releases/download/v2.13.0/riot-redis-2.13.0.zip"
-  sha256 "d0fb44fa259911554337147910b5adb55faaebc70133ae0c51ec889be9427382"
+  version "2.14.0"
+  url "https://github.com/redis-developer/riot/releases/download/v2.14.0/riot-redis-2.14.0.zip"
+  sha256 "6f235d862898614d211633c0f6548a40b698c91117bd2f0fb5c9e01ac63a2c5f"
   license "Apache-2.0"
-
-  bottle :unneeded
 
   depends_on "openjdk@8"
 
@@ -17,6 +15,6 @@ class RiotRedis < Formula
 
   test do
     output = shell_output("#{bin}/riot-redis --version")
-    assert_match "2.13.0", output
+    assert_match "2.14.0", output
   end
 end

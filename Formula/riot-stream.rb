@@ -1,9 +1,9 @@
 class RiotStream < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  version "2.14.0"
-  url "https://github.com/redis-developer/riot/releases/download/v2.14.0/riot-stream-2.14.0.zip"
-  sha256 "c285826d1ef5331a02b3e3b06f26f85a48ace43dc2ccad3225fa7057fdb28d77"
+  url "https://github.com/redis-developer/riot/releases/download/v2.14.1/riot-stream-2.14.1.zip"
+  version "2.14.1"
+  sha256 "5fb02b46ae959452e3aa3981cdc9bca2e3d6b0ec50717e5adc8a56e5c9c43cc2"
   license "Apache-2.0"
 
   depends_on "openjdk@8"
@@ -15,6 +15,6 @@ class RiotStream < Formula
 
   test do
     output = shell_output("#{bin}/riot-stream --version")
-    assert_match "2.14.0", output
+    assert_match "2.14.1", output
   end
 end

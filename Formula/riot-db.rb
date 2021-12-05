@@ -1,9 +1,9 @@
 class RiotDb < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.14.1/riot-db-2.14.1.zip"
-  version "2.14.1"
-  sha256 "1e787fa59c74c0fa372e1fb37fb7f6f355cf2295f1d881755c8e233af2aca3b0"
+  url "https://github.com/redis-developer/riot/releases/download/v2.14.2/riot-db-2.14.2.zip"
+  version "2.14.2"
+  sha256 "cde1f15ef57c0dd197e8c04186deb435261766ffb499125be945ba12ab97a10a"
   license "Apache-2.0"
 
   depends_on "openjdk@8"
@@ -15,6 +15,6 @@ class RiotDb < Formula
 
   test do
     output = shell_output("#{bin}/riot-db --version")
-    assert_match "2.14.1", output
+    assert_match "2.14.2", output
   end
 end

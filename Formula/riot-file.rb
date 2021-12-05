@@ -1,9 +1,9 @@
 class RiotFile < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  version "2.14.0"
-  url "https://github.com/redis-developer/riot/releases/download/v2.14.0/riot-file-2.14.0.zip"
-  sha256 "d8a79350bd66bc11907cc078451d253d48845b8ca4764831b393742d7215febf"
+  url "https://github.com/redis-developer/riot/releases/download/v2.14.1/riot-file-2.14.1.zip"
+  version "2.14.1"
+  sha256 "0c6d88bdb713df934ea5e974259e2a1f6bd22f5ae85532aaf2e442f456c36064"
   license "Apache-2.0"
 
   depends_on "openjdk@8"
@@ -15,6 +15,6 @@ class RiotFile < Formula
 
   test do
     output = shell_output("#{bin}/riot-file --version")
-    assert_match "2.14.0", output
+    assert_match "2.14.1", output
   end
 end

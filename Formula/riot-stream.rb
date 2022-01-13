@@ -1,13 +1,13 @@
-# Generated with JReleaser 0.10.0 at 2021-12-30T02:04:19.40751Z
+# Generated with JReleaser 0.10.0 at 2022-01-13T06:09:31.122152Z
 class RiotStream < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.14.4/riot-stream-2.14.4.zip"
-  version "2.14.4"
-  sha256 "9ea302fb94f4eedbe34b8a6e3742a0816031d1519e783b51f7e4381848fe0816"
+  url "https://github.com/redis-developer/riot/releases/download/v2.15.0/riot-stream-2.15.0.zip"
+  version "2.15.0"
+  sha256 "8f6693fbb5a12a7bb093933702551fa7f36d95420ab50b72a8605a828d8c5ace"
   license "Apache-2.0"
 
-  depends_on "openjdk@8"
+  depends_on "openjdk@17"
 
   def install
     libexec.install Dir["*"]
@@ -16,6 +16,6 @@ class RiotStream < Formula
 
   test do
     output = shell_output("#{bin}/riot-stream --version")
-    assert_match "2.14.4", output
+    assert_match "2.15.0", output
   end
 end

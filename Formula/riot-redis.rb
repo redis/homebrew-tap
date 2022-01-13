@@ -1,13 +1,13 @@
-# Generated with JReleaser 0.10.0 at 2021-12-30T02:04:19.40751Z
+# Generated with JReleaser 0.10.0 at 2022-01-13T06:09:31.122152Z
 class RiotRedis < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.14.4/riot-redis-2.14.4.zip"
-  version "2.14.4"
-  sha256 "1d100aad86c8c1c57c1721fbf8d4dc47bd763da290103c5d2c3e6b041c20e657"
+  url "https://github.com/redis-developer/riot/releases/download/v2.15.0/riot-redis-2.15.0.zip"
+  version "2.15.0"
+  sha256 "961bb0f4181547e3e4cf1a9e11bca822e6c8433fd7f86739ecb694f6c4f4fbc9"
   license "Apache-2.0"
 
-  depends_on "openjdk@8"
+  depends_on "openjdk@17"
 
   def install
     libexec.install Dir["*"]
@@ -16,6 +16,6 @@ class RiotRedis < Formula
 
   test do
     output = shell_output("#{bin}/riot-redis --version")
-    assert_match "2.14.4", output
+    assert_match "2.15.0", output
   end
 end

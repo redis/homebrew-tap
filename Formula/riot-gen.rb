@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.1.0 at 2022-08-01T21:42:17.401716313Z
+# Generated with JReleaser 1.1.0 at 2022-08-16T14:19:19.551284408Z
 class RiotGen < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.16.2/riot-gen-2.16.2.zip"
-  version "2.16.2"
-  sha256 "2842f6d3d30cddfe1bbb117663a52de8953d4a196f4044cea04065d3ad10ea4d"
+  url "https://github.com/redis-developer/riot/releases/download/v2.17.0/riot-gen-2.17.0.zip"
+  version "2.17.0"
+  sha256 "2658d61e52077eecd365f316519d7a6363009bb477eded7d59efe86c3707cd84"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class RiotGen < Formula
 
   test do
     output = shell_output("#{bin}/riot-gen --version")
-    assert_match "2.16.2", output
+    assert_match "2.17.0", output
   end
 end

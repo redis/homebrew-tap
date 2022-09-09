@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.2.0 at 2022-09-09T04:32:49.130963172Z
+# Generated with JReleaser 1.2.0 at 2022-09-09T05:28:02.600672155Z
 class RiotFile < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.18.0/riot-file-2.18.0.zip"
-  version "2.18.0"
-  sha256 "3bf096b731202111cd7071192486f4cba232c2ddfc3802b10f4f5ce6282a6aaf"
+  url "https://github.com/redis-developer/riot/releases/download/v2.18.1/riot-file-2.18.1.zip"
+  version "2.18.1"
+  sha256 "c2eab072b670a2839c0672c7a6ae2e0b0710f6667ef0e65debf284f445dd8288"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class RiotFile < Formula
 
   test do
     output = shell_output("#{bin}/riot-file --version")
-    assert_match "2.18.0", output
+    assert_match "2.18.1", output
   end
 end

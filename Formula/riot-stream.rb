@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.2.0 at 2022-09-23T03:36:54.632777695Z
+# Generated with JReleaser 1.2.0 at 2022-09-27T05:11:04.381734046Z
 class RiotStream < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.18.3/riot-stream-2.18.3.zip"
-  version "2.18.3"
-  sha256 "946aeecad1d1859a519ec3e5f73c3042aa6879989cb981311c34a9e2c5be22f7"
+  url "https://github.com/redis-developer/riot/releases/download/v2.18.4/riot-stream-2.18.4.zip"
+  version "2.18.4"
+  sha256 "0ca52f6e4d803c615befcbf0ef8c3ce472a47f894e808d33465460959f4e336b"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class RiotStream < Formula
 
   test do
     output = shell_output("#{bin}/riot-stream --version")
-    assert_match "2.18.3", output
+    assert_match "2.18.4", output
   end
 end

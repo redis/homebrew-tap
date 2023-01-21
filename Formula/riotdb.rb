@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.5.0-SNAPSHOT at 2023-01-19T16:31:44.892896-08:00
+# Generated with JReleaser 1.5.0-SNAPSHOT at 2023-01-21T07:01:33.780819408Z
 class RiotDb < Formula
   desc "Redis Input/Output Tools"
   homepage "https://developer.redis.com/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v2.18.6/riot-db-2.18.6.zip"
-  version "2.18.6"
-  sha256 "c03416c1608e4cd1a44f0adeab356ac7cecbb2bd5c1bf37ab49cea7283030387"
+  url "https://github.com/redis-developer/riot/releases/download/v2.9.0/riot-db-2.9.0.zip"
+  version "2.9.0"
+  sha256 "54a1ee8221d654a3d8777cec4ca31c303da270253f80e2677ce75593fbbddeb8"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class RiotDb < Formula
 
   test do
     output = shell_output("#{bin}/riot-db --version")
-    assert_match "2.18.6", output
+    assert_match "2.9.0", output
   end
 end

@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.8.0-SNAPSHOT at 2023-07-11T08:23:56.551766451Z
+# Generated with JReleaser 1.8.0-SNAPSHOT at 2023-07-14T05:48:58.215271027Z
 class Riot < Formula
   desc "Get data in and out of Redis with RIOT"
   homepage "https://github.com/redis-developer/riot"
-  url "https://github.com/redis-developer/riot/releases/download/v3.1.3/riot-3.1.3.zip"
-  version "3.1.3"
-  sha256 "ea140b8211620513e9932d96a6f6b1a6c67ca502bd81d7210d0632b70cde7c67"
+  url "https://github.com/redis-developer/riot/releases/download/v3.1.4/riot-3.1.4.zip"
+  version "3.1.4"
+  sha256 "4a499684c8e7888cb6cd224d87fd37fe609ed32e0416c818b517b4cfa12699aa"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class Riot < Formula
 
   test do
     output = shell_output("#{bin}/riot --version")
-    assert_match "3.1.3", output
+    assert_match "3.1.4", output
   end
 end

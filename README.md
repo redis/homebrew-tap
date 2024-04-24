@@ -4,20 +4,20 @@
 Invoke either of the following commands if the formula is hosted at GitHub
 
 ```sh
-$ brew install redis-developer/tap/<formula>
+$ brew install redis/tap/<formula>
 ```
 
 Or
 
 ```sh
-$ brew tap redis-developer/tap
+$ brew tap redis/tap
 $ brew install <formula>
 ```
 
 Invoke the following command if the formula is *not* hosted at GitHub
 
 ```sh
-brew tap redis-developer/homebrew-tap 
+brew tap redis/homebrew-tap 
 brew install <formula>
 ```
 
@@ -25,20 +25,20 @@ brew install <formula>
 Invoke either of the following commands if the cask is hosted at GitHub
 
 ```sh
-$ brew install --cask redis-developer/tap/<cask>
+$ brew install --cask redis/tap/<cask>
 ```
 
 Or
 
 ```sh
-$ brew tap redis-developer/tap
+$ brew tap redis/tap
 $ brew install --cask <cask>
 ```
 
 Invoke the following command if the cask is *not* hosted at GitHub
 
 ```sh
-brew tap redis-developer/homebrew-tap 
+brew tap redis/homebrew-tap 
 brew install --cask <formula>
 ```
 

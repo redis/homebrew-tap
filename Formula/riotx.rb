@@ -1,26 +1,26 @@
-# Generated with JReleaser 1.16.0 at 2025-02-18T23:44:25.082529791Z
+# Generated with JReleaser 1.16.0 at 2025-02-20T23:44:15.865877099Z
 
 class Riotx < Formula
   desc "Get data in and out of Redis with RIOT-X"
   homepage "https://github.com/redis-field-engineering/riotx-dist"
-  version "0.4.2"
+  version "0.4.3"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.2/riotx-standalone-0.4.2-linux-aarch64.zip"
-    sha256 "bdfdb640890074ebce575ef091604b212dd3affa5924afa19e05afad2c20de1a"
+    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.3/riotx-standalone-0.4.3-linux-aarch64.zip"
+    sha256 "c5d5bb8b62984c6141c00acf95bebb77459279acc2c4812e2097e031e3845f3d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.2/riotx-standalone-0.4.2-linux-x86_64.zip"
-    sha256 "bf584f0fb214a4b699ea8fbfc174b9d8c2a0c1de7bdb97d1f79ddb60877fcd43"
+    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.3/riotx-standalone-0.4.3-linux-x86_64.zip"
+    sha256 "0ad8bb8d0f9632f431827adad21c44ae72bdb72d4d999b91b71bb64ffac528c7"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.2/riotx-standalone-0.4.2-osx-aarch64.zip"
-    sha256 "c962a052154ba10e6fc25de32b200c102e7b2bb6ddc95796fa957987748d078c"
+    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.3/riotx-standalone-0.4.3-osx-aarch64.zip"
+    sha256 "e2db60e5ba139c11ca3271097d34de0417861257f3301351a877ae4759de1fe9"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.2/riotx-standalone-0.4.2-osx-x86_64.zip"
-    sha256 "48dc6f7610b40838407464f3e57088a6692f84b94a36bb2bde89dc7df119c012"
+    url "https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.3/riotx-standalone-0.4.3-osx-x86_64.zip"
+    sha256 "a3faef50cffadcc8b0745285f9ad9fa7a1efa021cd13784c9789631c421a2df8"
   end
 
 
@@ -42,6 +42,6 @@ class Riotx < Formula
 
   test do
     output = shell_output("#{bin}/riotx --version")
-    assert_match "0.4.2", output
+    assert_match "0.4.3", output
   end
 end

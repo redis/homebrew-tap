@@ -1,26 +1,26 @@
-# Generated with JReleaser 1.16.0 at 2025-02-16T18:45:24.233741491Z
+# Generated with JReleaser 1.17.0 at 2025-03-21T16:49:12.916570449Z
 
 class Riot < Formula
   desc "Get data in and out of Redis with RIOT"
   homepage "https://github.com/redis/riot"
-  version "4.2.3"
+  version "4.2.4"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/redis/riot/releases/download/v4.2.3/riot-standalone-4.2.3-linux-aarch64.zip"
-    sha256 "3dd943c09a4e637fe11c339182cc44f09afa35bfa2a64d1173f24136682d6570"
+    url "https://github.com/redis/riot/releases/download/v4.2.4/riot-standalone-4.2.4-linux-aarch64.zip"
+    sha256 "7b05f46170c8d5d2f3bad27ed1a398905a7d656c33ec44a163693790099c7064"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/redis/riot/releases/download/v4.2.3/riot-standalone-4.2.3-linux-x86_64.zip"
-    sha256 "6720a48ed6a76e4bc2cb1df9c4c2345b7a58abd54f7155e430976787a7a4a101"
+    url "https://github.com/redis/riot/releases/download/v4.2.4/riot-standalone-4.2.4-linux-x86_64.zip"
+    sha256 "bd4c59ed4d19eaf50bce96777efceced96ed2dc4c4e328e95c2ae2f3734bef31"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/redis/riot/releases/download/v4.2.3/riot-standalone-4.2.3-osx-aarch64.zip"
-    sha256 "cce6d03a916988fde81f350d0b968d1f7349668c49e1c68a34a1034c6bc8b04d"
+    url "https://github.com/redis/riot/releases/download/v4.2.4/riot-standalone-4.2.4-osx-aarch64.zip"
+    sha256 "b841a15f7e288f362a7727c5573add14c6272c3161f3caef57251b8b94f1ca4f"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/redis/riot/releases/download/v4.2.3/riot-standalone-4.2.3-osx-x86_64.zip"
-    sha256 "00a0eebd5adaf9acce2205b0c2c03430a7a1cff9d9c14fd9d17bebd64bbb4cc4"
+    url "https://github.com/redis/riot/releases/download/v4.2.4/riot-standalone-4.2.4-osx-x86_64.zip"
+    sha256 "183b3414c5b77026e5e8b5a4011e9ad221cf8127f4642ad8f7f600b0af20fdef"
   end
 
 
@@ -42,6 +42,6 @@ class Riot < Formula
 
   test do
     output = shell_output("#{bin}/riot --version")
-    assert_match "4.2.3", output
+    assert_match "4.2.4", output
   end
 end

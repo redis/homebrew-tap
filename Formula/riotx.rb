@@ -1,11 +1,11 @@
-# Generated with JReleaser 1.19.0 at 2025-08-21T00:14:57.893697259Z
+# Generated with JReleaser 1.20.0 at 2025-09-01T00:05:52.376127506Z
 
 class Riotx < Formula
   desc "Get data in and out of Redis with RIOT-X"
   homepage "https://github.com/redis/riotx-dist"
-  url "https://github.com/redis/riotx-dist/releases/download/v1.4.1/riotx-1.4.1.zip"
-  version "1.4.1"
-  sha256 "c7692b27f28dfa5cc5ba580e7047c5235020a0bee15c87d78f52aefd9ad6d7da"
+  url "https://github.com/redis/riotx-dist/releases/download/v1.5.0/riotx-1.5.0.zip"
+  version "1.5.0"
+  sha256 "66f4f310fd10bf9cf16e4d06eee6521d67e7f2b568fbabb6ed28a8c6757622ed"
   license "Apache-2.0"
 
   depends_on "openjdk@21"
@@ -17,6 +17,6 @@ class Riotx < Formula
 
   test do
     output = shell_output("#{bin}/riotx --version")
-    assert_match "1.4.1", output
+    assert_match "1.5.0", output
   end
 end

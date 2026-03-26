@@ -17,7 +17,7 @@ $ brew install <formula>
 Invoke the following command if the formula is *not* hosted at GitHub
 
 ```sh
-brew tap redis/homebrew-tap 
+brew tap redis/homebrew-tap https://github.com/redis/homebrew-tap.git
 brew install <formula>
 ```
 
@@ -38,7 +38,7 @@ $ brew install --cask <cask>
 Invoke the following command if the cask is *not* hosted at GitHub
 
 ```sh
-brew tap redis/homebrew-tap 
+brew tap redis/homebrew-tap https://github.com/redis/homebrew-tap.git
 brew install --cask <formula>
 ```
 

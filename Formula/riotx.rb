@@ -5,7 +5,7 @@ class Riotx < Formula
   homepage "https://github.com/redis/riotx"
   url "https://github.com/redis/riotx-dist/releases/download/v1.14.2/riotx-1.14.2.zip"
   version "1.14.2"
-  sha256 "add31f07eca7f60df021afafb7bd1393def88e688b1fe026c489d28bdaa22946"
+  sha256 "a4f26c6d2727a7af42c8e9245e45ce18a78739c4acce6858d970fc0039a6fa93"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
